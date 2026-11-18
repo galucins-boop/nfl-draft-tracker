@@ -1,0 +1,88 @@
+FOURTH & FOREVER — 2026 NFL TEAM DRAFT TRACKER
+================================================
+
+FASTEST WAY TO TRY IT
+---------------------
+1. Unzip this package.
+2. Open index.html in Chrome or Safari.
+3. The four friends, 32 team assignments, and November 19 Week 11 cutoff are already entered.
+4. Go to Team draft and assign NFL teams to friends.
+5. Click "Refresh NFL results" (internet required).
+6. Check Standings and Weekly matchups.
+
+Your edits save in YOUR browser only. If you open index.html from Finder, automatic
+score fetching depends on the browser allowing cross-origin calls to the NFL
+scoreboard provider. If the live fetch fails, your choices are preserved;
+use the hosted version below or import a results.json backup.
+
+IMPORTANT — THE SHARED/AUTOMATIC VERSION
+----------------------------------------
+If everyone needs the same standings website and results updated automatically,
+you need to host this folder. This package includes a ready-made GitHub Pages
+setup and a GitHub Actions updater that runs twice daily.
+
+GitHub Pages setup (one-time):
+1. Create a GitHub account at https://github.com/ if needed.
+2. Click New repository. Call it nfl-team-draft. Choose Public.
+3. Upload the CONTENTS of this extracted folder to the new repository. Include
+   .github/workflows/update-scores.yml, scripts/sync_scores.py and data/.
+   (The .github folder may be hidden in Finder; press Command-Shift-Period.)
+4. In the repo Settings -> Pages, choose 'Deploy from a branch', Branch main,
+   Folder /(root). Save. Wait for GitHub to show your published URL.
+5. On the hosted site, enter your friends, draft teams, and the scoring cutoff.
+6. In Commissioner, click Export shared league file. It downloads league.js.
+7. In the GitHub repo, open league.js, click Edit (pencil), and replace its
+   contents with your downloaded file. Commit. (Or upload to overwrite.)
+8. In GitHub Actions, select "Update NFL results" and click "Run workflow".
+   Enable Actions if GitHub asks. Once it succeeds, results.json / results.js
+   are refreshed. Scheduled runs then run twice per day; GitHub may delay them.
+9. Share the GitHub Pages URL with friends. Changes they make in their browsers
+   do NOT go back to GitHub. The commissioner should edit and re-export league.js
+   and commit changes whenever picks, captains or bonuses are updated.
+
+Very important: The site remembers local league edits in your browser. After
+publishing a league.js update, other users who have already made local changes
+might still see their own local version. They can clear browser site storage,
+or use Commissioner -> Import league file to get the latest official version.
+
+SCORING DEFAULTS
+----------------
+Regular season win after cutoff: +2; tie +1 per team
+Playoffs: qualification +5; division +3; first-round bye +3
+Wild Card win +8; Divisional win +12; Conference win +18; Super Bowl win +25
+Weekly head-to-head win +5 (rotating matches)
+Verified winning underdog +3 (commissioner managed)
+Selected playoff captain wins count 1.5x (extra +0.5x in standings)
+
+Playoff qualification: automatic when a team appears in a completed playoff
+match; commissioner may pre-award +5 in Playoff picks once qualifiers are set.
+Division champions/byes are set manually by the commissioner.
+Playoff captain should be locked before Wild Card; this app cannot enforce picks
+or prevent late changes. Everyone should agree on a deadline.
+Odds / underdog status are NOT fetched; commissioner verifies manually.
+
+WHAT AUTO-UPDATES (AND WHAT DOESN'T)
+-----------------------------------
+Automatic: final NFL regular-season and playoff game outcomes, regular points,
+playoff game-win points, captain multiplier on winning playoff games, and weekly
+matchup scoring (based on recorded final NFL games).
+Manual: NFL team ownership, playoff captains, underdog picks/verification,
+division winner bonuses, first-round bye bonuses, and any corrections.
+
+The ESPN scoreboard API used is an undocumented/unofficial service. It may
+change or stop working; this package includes a results import/export fallback.
+The scheduled updater depends on GitHub Actions running successfully. It does
+not run in the background merely by opening an HTML file.
+
+THIS PACKAGE IS PRE-FILLED WITH GRACE, REY, LINDSAY AND LEAH AND ALL 32 TEAMS.
+You do not need to enter your draft again. The cutoff is FINALIZED at Week 11, Thursday November 19, 2026 at 12:00 AM Eastern. Games before this date do not count.
+
+AUTOMATIC UPDATES: IMPORTANT
+----------------------------
+This ZIP is NOT an already-hosted website. The GitHub Actions workflow works only after
+you publish this folder to a GitHub repository, enable Actions and Pages, and check
+that Update NFL results succeeds. The scheduled job runs twice daily, not live.
+If you open the HTML on your computer, use Refresh NFL results yourself.
+Underdog picks, playoff captain selections, division winner and bye bonuses still
+need manual commissioner maintenance. League changes made in a browser do not
+automatically synchronize to GitHub or other friends.
