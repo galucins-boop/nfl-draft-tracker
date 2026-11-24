@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T13:43:55.432252Z",
+  "updatedAt": "2026-11-24T07:37:30.585541Z",
   "games": [
     {
       "id": "401872656",
@@ -1952,10 +1952,10 @@
       "week": 11,
       "home": "WAS",
       "away": "CIN",
-      "winner": null,
-      "complete": false,
-      "homeScore": 0,
-      "awayScore": 0
+      "winner": "WAS",
+      "complete": true,
+      "homeScore": 22,
+      "awayScore": 20
     },
     {
       "id": "401873079",
