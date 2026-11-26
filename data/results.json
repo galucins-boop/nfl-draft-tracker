@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T13:45:09.014650Z",
+  "updatedAt": "2026-11-26T07:39:10.766549Z",
   "games": [
     {
       "id": "401872656",
@@ -1964,10 +1964,10 @@
       "week": 12,
       "home": "LAR",
       "away": "GB",
-      "winner": null,
-      "complete": false,
-      "homeScore": 0,
-      "awayScore": 0
+      "winner": "LAR",
+      "complete": true,
+      "homeScore": 26,
+      "awayScore": 13
     },
     {
       "id": "401873081",
