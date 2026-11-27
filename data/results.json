@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T13:43:05.559682Z",
+  "updatedAt": "2026-11-27T07:38:00.809544Z",
   "games": [
     {
       "id": "401872656",
@@ -1976,10 +1976,10 @@
       "week": 12,
       "home": "DET",
       "away": "CHI",
-      "winner": null,
-      "complete": false,
-      "homeScore": 0,
-      "awayScore": 0
+      "winner": "CHI",
+      "complete": true,
+      "homeScore": 35,
+      "awayScore": 39
     },
     {
       "id": "401873080",
@@ -1988,10 +1988,10 @@
       "week": 12,
       "home": "DAL",
       "away": "PHI",
-      "winner": null,
-      "complete": false,
-      "homeScore": 0,
-      "awayScore": 0
+      "winner": "PHI",
+      "complete": true,
+      "homeScore": 38,
+      "awayScore": 39
     },
     {
       "id": "401873082",
@@ -2000,10 +2000,10 @@
       "week": 12,
       "home": "BUF",
       "away": "KC",
-      "winner": null,
-      "complete": false,
-      "homeScore": 0,
-      "awayScore": 0
+      "winner": "BUF",
+      "complete": true,
+      "homeScore": 13,
+      "awayScore": 10
     },
     {
       "id": "401873083",
