@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T13:39:53.975258Z",
+  "updatedAt": "2026-11-28T07:30:12.831623Z",
   "games": [
     {
       "id": "401872656",
@@ -2012,10 +2012,10 @@
       "week": 12,
       "home": "PIT",
       "away": "DEN",
-      "winner": null,
-      "complete": false,
-      "homeScore": 0,
-      "awayScore": 0
+      "winner": "PIT",
+      "complete": true,
+      "homeScore": 27,
+      "awayScore": 5
     },
     {
       "id": "401873084",
